@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  padding: 0 !important;
+  margin-bottom: 200px;
+}
+
+.header {
+  padding: 0 !important;
+  height: 60px;
+  background-color: black;
+}
+
+.header-contain {
+  height: 100%;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 30px;
+  width: 100%;
+  display: block;
+}
+
+.nav {
+  color: white;
+  font-size: 15px;
+  height: 100% ;
+}
+
+.nav-element {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.drop-down {
+  display: flex;
+  width: 100%  !important;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.nav-dropdown {
+  display: none;
+  position: absolute !important;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.185) !important;
+  border-radius: 5px;
+  width: 200px;
+  top: 50px;
+  z-index: 1;
+  right: 0;
+  list-style: none;
+  padding: 10 0px;
+}
+
+.nav-element:hover .nav-dropdown {
+  display: flex;
+
+}
+.nav-dropdown-element {
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-dropdown-element:hover {
+  background-color: rgba(0, 255, 255, 0.205);
+}
+
+.banner {
+ height: 600px;
+ background-image: url(./assets/01_NTT_DATA_Headquarter_project.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ object-fit: cover;
+ position: relative;
+}
+
+.content{
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px white solid;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.heading {
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.about {
+  flex-wrap: wrap;
+  margin-top: 100px;
+  flex-direction: row;
+  display: flex;
+}
+
+.about-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-name {
+  font-size: 20px;
+}
+
+.about-name span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 13px;
+}
+
+.image {
+  height: 200px;
+  background-image: url(./assets/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.splide {
+  padding:  0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+      padding: 0 !important;
+      height: 100px;
+      background-color: black;
+    }
+  .header-contain {
+    height: 100%;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-content: center !important;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
